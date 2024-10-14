@@ -9,19 +9,23 @@
 // by nightcat
 //
 // ----------------------------------------
-
 {
-  "layer": "bottom",  // Layer position of the bar
-  "position": "top",   // Position of the bar on the screen
-  "height": 24,       // Height of the bar in pixels
-  "spacing": 5,       // Spacing between modules in pixels
+    // General settings
 
-  // Left modules
-  "modules-left": ["sway/workspaces", "sway/mode"],
+    // Position TOP
+    "layer": "top",
+    "margin-top": 14,
+    "margin-bottom": 0,
+    
+    // Modules Left
+    "modules-left": [
+        "hyprland/workspaces",
+        "sway/mode",
+        "hyprland/window"
+    ],
 
-  // Center modules
-  "modules-center": ["sway/window"],
-
-  // Right modules
-  "modules-right": ["idle_inhibitor", "cpu", "memory", "battery", "pulseaudio", "clock", "tray"]
-}
+    // Modules Center
+    "modules-center": [
+    
+    ],
+},
