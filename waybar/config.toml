@@ -1,0 +1,23 @@
+# Waybar Configuration
+#  _    _             _                
+# | |  | |           | |               
+# | |  | | __ _ _   _| |__   __ _ _ __ 
+# | |/\| |/ _` | | | | '_ \ / _` | '__|
+# \  /\  / (_| | |_| | |_) | (_| | |   
+#  \/  \/ \__,_|\__, |_.__/ \__,_|_|   
+#                __/ |                 
+#               |___/         
+
+layer = "bottom"  # Layer position of the bar
+position = "top"   # Position of the bar on the screen
+height = 24       # Height of the bar in pixels
+spacing = 5       # Spacing between modules in pixels
+
+# Left modules
+modules-left = ["sway/workspaces", "sway/mode"]
+
+# Center modules
+modules-center = ["sway/window"]
+
+# Right modules
+modules-right = ["idle_inhibitor", "cpu", "memory", "battery", "pulseaudio", "clock", "tray"]
