@@ -7,6 +7,20 @@
 //
 // by nightcat
 // --------------------------------------
-                                      
 
+
+{
+	"clock": {
+		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+		"format": "{:%F %T}",
+		"format-alt": "{:%F %T}",
+		"interval": 1
+	},
+
+    "cpu": {
+        "interval": 10,
+        "format": "  {}%",
+        "max-length": 10
+  }
+}
 
