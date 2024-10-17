@@ -18,15 +18,18 @@
     "margin-top": 14,
     "margin-bottom": 0,
     
+    // Load modules
+    "include": ["~/dotfiles/waybar/modules.jsonc"],
+
     // Modules Left
     "modules-left": [
         "hyprland/workspaces",
-        "sway/mode",
         "hyprland/window"
     ],
 
     // Modules Center
     "modules-center": [
+        "clock" // todo: fix clock. only launching waybar manually makes it work for some reason
+    ]
     
-    ],
-},
+}
