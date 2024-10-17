@@ -21,6 +21,22 @@
         "interval": 10,
         "format": "  {}%",
         "max-length": 10
-  }
+  },
+
+    "battery": {
+        "bat": "BAT1",
+        "interval": 60,
+        "states": {
+            "warning": 30,
+            "critical": 15
+        },
+        "format": "{capacity}% {icon}",
+        "format-icons": {
+            "full": "🔋",
+            "charging": "🔌",
+            "discharging": "⚡",
+            "warning": "⚠"
+        }
+    }
 }
 
