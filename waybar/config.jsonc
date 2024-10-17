@@ -30,6 +30,8 @@
     // Modules Center
     "modules-center": [
         "clock" // todo: fix clock. only launching waybar manually makes it work for some reason
-    ]
-    
+    ],
+    "modules-right": [
+        "cpu"
+    ]    
 }
