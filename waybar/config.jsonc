@@ -15,7 +15,7 @@
 
     // Position TOP
     "layer": "top",
-    "margin-top": 14,
+    "margin-top": 10,
     "margin-bottom": 0,
     
     // Load modules
@@ -33,6 +33,8 @@
     ],
     "modules-right": [
         "cpu",
+        "memory",
+        "pulseaudio",
         "battery"
     ]    
 }
