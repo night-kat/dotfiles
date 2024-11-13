@@ -7,10 +7,10 @@ map("n", "h", "<NOP>", { desc = "Do nothing (disable h in normal mode)" })
 map("v", "h", "<NOP>", { desc = "Do nothing (disable h in visual mode)" })
 
 -- Change keybinds in visual mode
-map("v", "j", "<Left>", {desc = "move left(normal mode)"})
-map("v", "ö", "<Right>", {desc = "move right(normal mode)"})
-map("v", "k", "<Down>", {desc = "move down(normal mode)"})
-map("v", "l", "<Up>", {desc = "move up(normal mode)"})
+map("v", "h", "<Left>", {desc = "move left(normal mode)"})
+map("v", "j", "<Down>", {desc = "move down(normal mode)"})
+map("v", "k", "<Up>", {desc = "move up(normal mode)"})
+map("v", "l", "<Right>", {desc = "move right(normal mode)"})
 
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
@@ -20,13 +20,13 @@ map("i", "<C-k>", "<Down>", { desc = "move down" })
 map("i", "<C-l>", "<Up>", { desc = "move up" })
 
 -- Regular movement in normal mode
-map("n", "j", "<Left>", {desc = "move left(normal mode)"})
-map("n", "ö", "<Right>", {desc = "move right(normal mode)"})
-map("n", "k", "<Down>", {desc = "move down(normal mode)"})
-map("n", "l", "<Up>", {desc = "move up(normal mode)"})
+map("n", "h", "<Left>", {desc = "move left(normal mode)"})
+map("n", "j", "<Down>", {desc = "move down(normal mode)"})
+map("n", "k", "<Up>", {desc = "move up(normal mode)"})
+map("n", "l", "<Right>", {desc = "move right(normal mode)"})
 
-map("n", "<C-j>", "<C-w>h", { desc = "switch window left" })
-map("n", "<C-ö>", "<C-w>l", { desc = "switch window right" })
+map("n", "<C-h>", "<C-w>h", { desc = "switch window left" })
+map("n", "<C-j>", "<C-w>l", { desc = "switch window right" })
 map("n", "<C-k>", "<C-w>j", { desc = "switch window down" })
 map("n", "<C-l>", "<C-w>k", { desc = "switch window up" })
 
