@@ -62,5 +62,15 @@
         "tooltip-format": "{device_alias} {status}",
         "on-click": "blueman-applet",
         "on-click-right": "killall blueman-applet"
+  }, 
+  "network": {
+    "format-ethernet": "<span color='#89ddff'>󰈀</span> {bandwidthDownBytes:=}",
+    "format-wifi": "<span color='#89ddff'>{icon}</span> {bandwidthDownBytes:=}",
+    "format-disconnected": "<span color='#89ddff'>󰤭</span> {bandwidthDownBytes:=}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "interval": 2,
+    "tooltip-format": "{essid}",
+    "on-click": "nm-applet",
+    "on-click-right": "killall nm-applet" 
   }
 }
