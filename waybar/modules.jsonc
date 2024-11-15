@@ -8,8 +8,19 @@
 // by nightcat
 // --------------------------------------
 
-
 {
+  "hyprland/workspaces": {
+        "active-only": false,
+        "sort-by-number": true,
+        "on-click": "activate",
+        "all-outputs": false,
+        "format": "{icon}",
+        "format-icons": {
+            "active": "󰮯",
+            "default": "•"
+        }
+    },
+
 	"clock": {
         "timezone": "Europe/Rome",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -33,10 +44,11 @@
         },
         "format": "{capacity}% {icon}",
         "format-icons": {
-            "full": "🔋",
-            "charging": "🔌",
-            "discharging": "⚡",
-            "warning": "⚠"
+            "format": "<span color='#c3e88d'>{icon}</span> {capacity}%",
+            "format-charging": "<span color='#c3e88d'>󱐋</span> {capacity}%",
+            "format-plugged": "<span color='#c3e88d'></span> {capacity}%",
+            "tooltip-format": "{time} left",
+            "format-icons": ["󰁺", "󰁼", "󰁾", "󰂁", "󰁹"]
         }
     },
 
@@ -51,10 +63,10 @@
         "format-bluetooth": "<span color='#f78c6c'>{icon}</span> {volume}%",
         "format-bluetooth-muted": "<span color='#f78c6c'>󰖁</span> {volume}%",
         "format-icons": {
-          "headphone": "󰋋",
-          "phone": "󰏲",
-          "portable": "󰏲",
-          "default": ["󰕿", "󰖀", "󰕾"]
+            "headphone": "󰋋",
+            "phone": "󰏲",
+            "portable": "󰏲",
+            "default": ["󰕿", "󰖀", "󰕾"]
         }
     },
     "bluetooth": {
@@ -63,20 +75,26 @@
         "tooltip-format": "{device_alias} {status}",
         "on-click": "blueman-applet",
         "on-click-right": "killall blueman-applet"
-  }, 
-  "network": {
-    "format-ethernet": "<span color='#89ddff'>󰈀</span> {bandwidthDownBytes:=}",
-    "format-wifi": "<span color='#89ddff'>{icon}</span> {bandwidthDownBytes:=}",
-    "format-disconnected": "<span color='#89ddff'>󰤭</span> {bandwidthDownBytes:=}",
-    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
-    "interval": 2,
-    "tooltip-format": "{essid}",
-    "on-click": "nm-applet",
-    "on-click-right": "killall nm-applet" 
-  },
-  
-  "memory": {
-    "format": "<span color='#c792ea'>󰘚</span> {used:.2g}GB",
-    "interval": 2,
-    "on-click": "kitty btop"
+    }, 
+    "network": {
+        "format-ethernet": "<span color='#89ddff'>󰈀</span> {bandwidthDownBytes:=}",
+        "format-wifi": "<span color='#89ddff'>{icon}</span> {bandwidthDownBytes:=}",
+        "format-disconnected": "<span color='#89ddff'>󰤭</span> {bandwidthDownBytes:=}",
+        "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+        "interval": 2,
+        "tooltip-format": "{essid}",
+        "on-click": "nm-applet",
+        "on-click-right": "killall nm-applet" 
+    },
+
+    "memory": {
+        "format": "<span color='#c792ea'>󰘚</span> {used:.2g}GB",
+        "interval": 2,
+        "on-click": "kitty btop"
+    },
+
+    "group/control": {
+        "orientation": "horizontal",
+        "modules": ["battery", "network", "bluetooth", "pulseaudio"]
+    }
 }
