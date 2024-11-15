@@ -55,5 +55,12 @@
           "portable": "󰏲",
           "default": ["󰕿", "󰖀", "󰕾"]
         }
-    }
+    },
+    "bluetooth": {
+        "format": "<span color='#82aaff'></span> {status}",
+        "format-connected-battery": "<span color='#82aaff'></span> {device_battery_percentage}%",
+        "tooltip-format": "{device_alias} {status}",
+        "on-click": "blueman-applet",
+        "on-click-right": "killall blueman-applet"
+  }
 }
