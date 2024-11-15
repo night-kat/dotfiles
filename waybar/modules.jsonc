@@ -11,6 +11,7 @@
 
 {
 	"clock": {
+        "timezone": "Europe/Rome",
 		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
 		"format": "{:%F %T}",
 		"format-alt": "{:%F %T}",
@@ -72,5 +73,10 @@
     "tooltip-format": "{essid}",
     "on-click": "nm-applet",
     "on-click-right": "killall nm-applet" 
-  }
+  },
+  
+  "memory": {
+    "format": "<span color='#c792ea'>󰘚</span> {used:.2g}GB",
+    "interval": 2,
+    "on-click": "kitty btop"
 }
