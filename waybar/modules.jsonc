@@ -9,7 +9,7 @@
 // --------------------------------------
 
 {
-  "hyprland/workspaces": {
+    "hyprland/workspaces": {
         "active-only": false,
         "sort-by-number": true,
         "on-click": "activate",
@@ -21,13 +21,13 @@
         }
     },
 
-	"clock": {
+    "clock": {
         "timezone": "Europe/Rome",
-		"tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-		"format": "{:%F %T}",
-		"format-alt": "{:%F %T}",
-		"interval": 1
-	},
+        "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
+        "format": "{:%F %T}",
+        "format-alt": "{:%F %T}",
+        "interval": 1
+    },
 
     "cpu": {
         "interval": 10,
@@ -52,9 +52,10 @@
         }
     },
 
-    "memory": {
-            "interval": 30,
-            "format": "{used} GiB/{total} GiB"
+    "temperature": {
+        "format": "<span color='#f07178'></span> {temperatureC}󰔄",
+        "interval": 2,
+        "on-click": "kitty btop"
     },
 
     "pulseaudio": {
@@ -93,8 +94,14 @@
         "on-click": "kitty btop"
     },
 
+// Groups
+    "group/hw": {
+        "orientation": "horizontal",
+        "modules": ["cpu", "temperature", "memory"]
+    },  
+
     "group/control": {
         "orientation": "horizontal",
-        "modules": ["battery", "network", "bluetooth", "pulseaudio"]
-    }
-}
+        "modules": ["network", "bluetooth", "pulseaudio", "battery"]
+  }
+}    
