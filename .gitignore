@@ -14,5 +14,5 @@
 ~/dotfiles/.oh-my-zsh/.idea
 
 #clipboard stuff 
-~/dotfiles/clipse/clipse.log
-~/dotfiles/clipse/clipboard_histroy.json
+/clipse/clipse.log
+/clipse/clipboard_history.json
