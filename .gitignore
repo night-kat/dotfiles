@@ -12,3 +12,7 @@
 # editor configs
 /dotfiles/.oh-my-zsh/.vscode
 /dotfiles/.oh-my-zsh/.idea
+
+#clipboard stuff 
+/dotfiles/clipse/clipse.log
+/dotfiles/clipse/clipboard_histroy.json
