@@ -14,10 +14,10 @@ map("v", "l", "<Right>", {desc = "move right(normal mode)"})
 
 map("i", "<C-b>", "<ESC>^i", { desc = "move beginning of line" })
 map("i", "<C-e>", "<End>", { desc = "move end of line" })
-map("i", "<C-j>", "<Left>", { desc = "move left" })
-map("i", "<C-ö>", "<Right>", { desc = "move right" })
-map("i", "<C-k>", "<Down>", { desc = "move down" })
-map("i", "<C-l>", "<Up>", { desc = "move up" })
+map("i", "<C-h>", "<Left>", { desc = "move left" })
+map("i", "<C-l>", "<Right>", { desc = "move right" })
+map("i", "<C-j>", "<Down>", { desc = "move down" })
+map("i", "<C-k>", "<Up>", { desc = "move up" })
 
 -- Regular movement in normal mode
 map("n", "h", "<Left>", {desc = "move left(normal mode)"})
@@ -134,5 +134,3 @@ vim.opt.clipboard = ""
 -- Map Ctrl+C to copy to the system clipboard in normal and visual modes
 vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true, desc = "Copy to clipboard" })
 vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true, desc = "Copy to clipboard" })
-
-
