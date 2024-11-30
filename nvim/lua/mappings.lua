@@ -127,3 +127,12 @@ end, { desc = "whichkey query lookup" })
 -- better indenting
 map('v', '<', '<gv')
 map('v', '>', '>gv')
+
+-- clipboard
+vim.opt.clipboard = ""
+
+-- Map Ctrl+C to copy to the system clipboard in normal and visual modes
+vim.api.nvim_set_keymap('n', '<C-c>', '"+y', { noremap = true, silent = true, desc = "Copy to clipboard" })
+vim.api.nvim_set_keymap('v', '<C-c>', '"+y', { noremap = true, silent = true, desc = "Copy to clipboard" })
+
+
