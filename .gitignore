@@ -1,17 +1,17 @@
-~/dotfiles/waybar/.waybar.err
+/dotfiles/waybar/.waybar.err
 
 # custom files
-~/dotfiles/.oh-my-zsh/custom/
+/dotfiles/.oh-my-zsh/custom/
 
 # temp files directories
-~/dotfiles/.oh-my-zsh/cache/
-~/dotfiles/.oh-my-zsh/log/
+/dotfiles/.oh-my-zsh/cache/
+/dotfiles/.oh-my-zsh/log/
 *.swp
-/dotfiles/.oh-my-zsh/.DS_Store
+dotfiles/.oh-my-zsh/.DS_Store
 
 # editor configs
-~/dotfiles/.oh-my-zsh/.vscode
-~/dotfiles/.oh-my-zsh/.idea
+/dotfiles/.oh-my-zsh/.vscode
+/dotfiles/.oh-my-zsh/.idea
 
 #clipboard stuff 
 /clipse/clipse.log
