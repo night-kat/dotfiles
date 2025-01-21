@@ -8,6 +8,7 @@
 /dotfiles/.oh-my-zsh/log/
 *.swp
 dotfiles/.oh-my-zsh/.DS_Store
+/.oh-my-zsh/cache/
 
 # editor configs
 /dotfiles/.oh-my-zsh/.vscode
@@ -16,3 +17,4 @@ dotfiles/.oh-my-zsh/.DS_Store
 #clipboard stuff 
 /clipse/clipse.log
 /clipse/clipboard_history.json
+/clipse/tmp_files/
