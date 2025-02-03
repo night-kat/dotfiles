@@ -1,0 +1,60 @@
+Environment variable $QT_QPA_PLATFORMTHEME not set, ignoring.
+Environment variable $XDG_DATA_DIRS not set, ignoring.
+Setting up watches.
+Watches established.
+Environment variable $QT_QPA_PLATFORMTHEME not set, ignoring.
+Environment variable $XDG_DATA_DIRS not set, ignoring.
+The XKEYBOARD keymap compiler (xkbcomp) reports:
+> Warning:          Unsupported maximum keycode 708, clipping.
+>                   X11 cannot support keycodes above 255.
+> Warning:          Could not resolve keysym XF86KbdInputAssistPrevgrou
+> Warning:          Could not resolve keysym XF86KbdInputAssistNextgrou
+Errors from xkbcomp are not fatal to the X server
+
+(process:994): Gtk-WARNING **: 13:00:56.467: Locale not supported by C library.
+	Using the fallback 'C' locale.
+[1058, Main Thread] WARNING: Locale not supported by C library.
+	Using the fallback 'C' locale.: 'glib warning', file /root/.local/share/bsys6/work/librewolf-134.0.2-1/toolkit/xre/nsSigHandlers.cpp:201
+
+(LibreWolf:1058): Gtk-WARNING **: 13:00:59.362: Locale not supported by C library.
+	Using the fallback 'C' locale.
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_init_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
+*** BUG ***
+In pixman_region32_union_rect: Invalid rectangle passed
+Set a breakpoint on '_pixman_log_error' to debug
+
