@@ -1,27 +1,17 @@
 [global]
-    monitor = 0
-    follow = keyboard
-    width = 370
-    height = (350, 350)
-    offset = (0, 25) 
-    padding = 2
-    horizontal_padding = 2
-    transparency = 25
-    font = Monospace 12
-    format = "<b>%s</b>\n%b"
+frame_color = "#89b4fa"
+separator_color= frame
+highlight = "#89b4fa"
 
 [urgency_low]
-    background = "#1d2021"
-    foreground = "#928374"
-    timeout = 3
+background = "#1e1e2e"
+foreground = "#cdd6f4"
 
 [urgency_normal]
-    foreground = "#ebdbb2"
-    background = "#458588"
-    timeout = 5
+background = "#1e1e2e"
+foreground = "#cdd6f4"
 
 [urgency_critical]
-    background = "#1cc24d"
-    foreground = "#ebdbb2"
-    frame_color = "#fabd2f"
-    timeout = 10
+background = "#1e1e2e"
+foreground = "#cdd6f4"
+frame_color = "#fab387"

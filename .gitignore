@@ -1,4 +1,5 @@
-/dotfiles/waybar/.waybar.err
+*.err
+*.log
 
 # custom files
 /dotfiles/.oh-my-zsh/custom/
