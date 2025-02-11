@@ -19,3 +19,6 @@ dotfiles/.oh-my-zsh/.DS_Store
 /clipse/clipse.log
 /clipse/clipboard_history.json
 /clipse/tmp_files/
+
+# sddm
+/sddm/wayland-session.log
