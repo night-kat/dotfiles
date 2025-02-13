@@ -1,6 +1,8 @@
 vim.g.base46_cache = vim.fn.stdpath "data" .. "/base46/"
 vim.g.mapleader = " "
 
+-- hide mouse when typing
+vim.g.neovide_hide_mouse_when_typing = true
 
 -- Railgun cursor neovide
 vim.g.neovide_cursor_vfx_mode = "railgun"
