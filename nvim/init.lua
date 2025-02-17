@@ -46,6 +46,9 @@ vim.api.nvim_set_option("clipboard", "unnamed")
 dofile(vim.g.base46_cache .. "defaults")
 dofile(vim.g.base46_cache .. "statusline")
 
+-- Load custom nvim-cmp config
+require("configs.cmp")
+
 require "options"
 require "nvchad.autocmds"
 
