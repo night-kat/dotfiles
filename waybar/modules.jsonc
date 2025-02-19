@@ -24,8 +24,8 @@
     "clock": {
         "timezone": "Europe/Rome",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%F %T}",
-        "format-alt": "{:%F %T}",
+        "format": "{:%F %H:%M:%S}",
+        "format-alt": "{:%F %H:%M:%S}",
         "interval": 1
     },
 
