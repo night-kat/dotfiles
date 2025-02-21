@@ -22,3 +22,20 @@ dotfiles/.oh-my-zsh/.DS_Store
 
 # sddm
 /sddm/wayland-session.log
+
+# custom files
+custom/
+
+# temp files directories
+cache/
+log/
+*.swp
+.DS_Store
+
+# editor configs
+.vscode
+.idea
+
+# zcompile cached files
+*.zwc
+
